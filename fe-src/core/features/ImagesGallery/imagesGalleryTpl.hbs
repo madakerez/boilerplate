@@ -1,0 +1,15 @@
+<div id="gallery-overlay">
+    <div class="nav-wrap">
+        <button class="next-btn">Next</button>
+        <button class="prev-btn">Prev</button>
+    </div>
+    <div class="overlay-content">
+        {{#urls}}
+            <div class="img-wrap">
+                <div class="img-container">
+                    <img src="{{url}}" alt=""/>
+                </div>
+            </div>
+        {{/urls}}
+    </div>
+</div>

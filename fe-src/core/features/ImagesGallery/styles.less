@@ -1,0 +1,50 @@
+#gallery-overlay {
+  width: 100vw;
+  height: 100vh;
+  overflow: hidden;
+  background: rgba(0,0,0,0.8);
+
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 99;
+
+  flex-direction: row;
+  flex-wrap: nowrap;
+  display: flex;
+
+  opacity: 0;
+  pointer-events: none;
+
+  .nav-wrap {
+    position: absolute;
+    top:0;
+    left: 0;
+    z-index: 120;
+  }
+
+  .overlay-content {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+
+    .img-wrap {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      min-width: 100vw;
+      height: 100vh;
+      cursor: pointer;
+
+      .img-container {
+        max-width: 50%;
+
+        img {
+          max-width: 100%;
+        }
+      }
+
+    }
+
+  }
+}
